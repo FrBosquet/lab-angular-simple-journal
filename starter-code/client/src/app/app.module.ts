@@ -5,16 +5,20 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import { EntryListService } from './services/entry.list.service';
+import { EntryListComponent } from './entry-list/entry-list.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EntryListComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [EntryListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

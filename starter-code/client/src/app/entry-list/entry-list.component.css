@@ -1,0 +1,9 @@
+.entry-wrapper{
+
+}
+.entry-wrapper > .item{
+  padding: 15px;
+  margin: 15px;
+  border-radius: 15px;
+  background: rgb(101, 151, 209);
+}
