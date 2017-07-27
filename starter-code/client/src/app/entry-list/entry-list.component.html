@@ -1,9 +1,11 @@
 <div>
-  <h1>entry-list works!</h1>
+  <h1>Entry list</h1>
   <section class="entry-wrapper">
-    <article class="item" *ngFor='let entry of entries'>
-      <h4>{{entry.title}}</h4>
-      <h5>{{entry.date | date: 'dd/MM/yyyy'}}</h5>
-    </article>
+    <a [routerLink]="['/entries', entry._id]" *ngFor='let entry of entries'>
+      <article class="item">
+        <h4>{{entry.title}}</h4>
+        <h5>{{entry.date | date: 'dd/MM/yyyy'}}</h5>
+      </article>
+    </a>
   </section>
 </div>
