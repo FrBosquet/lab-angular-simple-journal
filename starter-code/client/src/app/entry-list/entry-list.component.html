@@ -1,5 +1,6 @@
 <div>
   <h1>Entry list</h1>
+  <app-entry-form-component (onNew)='addEntry($event)'></app-entry-form-component>
   <section class="entry-wrapper">
     <a [routerLink]="['/entries', entry._id]" *ngFor='let entry of entries'>
       <article class="item">

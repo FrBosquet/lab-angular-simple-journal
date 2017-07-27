@@ -16,4 +16,8 @@ export class EntryListComponent implements OnInit {
         this.entries = info;
       });
   }
+
+  addEntry(newEntry){
+    this.entries.push(newEntry)
+  }
 }

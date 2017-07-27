@@ -1,0 +1,8 @@
+<div>
+  <button (click)='toggleVisible()'>Show new entry form</button>
+  <form *ngIf='visible' (ngSubmit)='submitNew(form)' #form='ngForm'>
+    <input type="text" [(ngModel)]="title" name="title" placeholder="title">
+    <textarea [(ngModel)]="content" name="content" rows="8" cols="80" placeholder="content"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</div>

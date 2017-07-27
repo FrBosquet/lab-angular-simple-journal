@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { EntryListService } from './services/entry.list.service';
 import { EntryListComponent } from './entry-list/entry-list.component';
 import { SingleEntryComponent } from './single-entry/single-entry.component';
+import { EntryFormComponentComponent } from './entry-form-component/entry-form-component.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -20,7 +21,8 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     EntryListComponent,
-    SingleEntryComponent
+    SingleEntryComponent,
+    EntryFormComponentComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
